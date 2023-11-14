@@ -5,4 +5,4 @@ uri="mongodb://threepark:y397jue3kPm8WbLo@ac-8a1feb0-shard-00-00.ot5bv2g.mongodb
 # Create a new client and connect to the server
 client = MongoClient(uri)
 
-db = client['test_mongo']
+db = client['Crayola_MongoDB']
