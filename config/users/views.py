@@ -3,8 +3,6 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import UserRegistrationForm, UserUpdateForm
 
-    
-# 회원가입 뷰
 def register_view(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
@@ -17,7 +15,6 @@ def register_view(request):
 
     return render(request, 'registration/register.html', {'form': form})
 
-# 회원 정보 수정 뷰
 @login_required
 def update_user_view(request):
     if request.method == 'POST':
