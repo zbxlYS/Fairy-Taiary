@@ -22,5 +22,6 @@ urlpatterns = [
     path('', main_page_view, name='main_page'),
     path('admin/', admin.site.urls),
     path('diary/', include('diary.urls')),
-    path('users/', include('users.urls'))
+    path('users/', include('users.urls')),
+    path('cgpt/', include('cgpt.urls')),
 ]
