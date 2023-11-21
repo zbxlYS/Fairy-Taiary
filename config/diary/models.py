@@ -1,8 +1,16 @@
 from django.db import models
-from db_connection import db
-
+from django.conf import settings
 # Create your models here.
 
-# we dont need models with mongoDB
-# Diary 라는 이름의 collection 생성
-diary_collections=db['Diary'] 
+class Diary(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    title = models.CharField(max_length = 30)
+    content = models.TextField()
+    image_url = models.ImageField(blank=True, null=True)
+    registered_date = models.DateTimeField(auto_now_add=True)
+    last_update_date = models.DateTimeField(auto_now=True)
+    
+    class Meta: 
+        managed = True
+        db_table = 'diary'
+        app_label = 'diary' 
