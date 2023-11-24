@@ -6,7 +6,7 @@
 
 #### 
 <details>
-<summary><h3>⚙️About AI</h3></summary>
+<summary><h1>⚙️About AI</h1></summary>
 <div markdown="1">
 <h2> 💡사용자 일기 다중 감정 분석</h2>
 <h3>사용 모델 : KoBERT</h3>
