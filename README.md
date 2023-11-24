@@ -19,7 +19,7 @@
 
 <h2> 💡일기 기반 자동 코멘트 생성</h2>
 <h3>사용 모델 : KoGPT2</h3>
-<h4>Dataset : https://github.com/songys/Chatbot_data </h4><br>
+<h4>Dataset : https://github.com/songys/Chatbot_data </h4>
 <h4>KoGPT2 모델은 문장을 "생성"해내는 모델이다. 따라서 일기 내용에 대한 코멘트를 달도록 구현하기 위해 입력 받은 내용에 대해 위로하거나 공감하거나 부드러운 표현으로 반응하고 문장을 생성해내도록 FineTuning을 진행</h4><br>
 
 <h3>결과</h3>
